@@ -1,0 +1,35 @@
+CREATE TABLE Customers (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Invoices (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    invoice_number VARCHAR(255) NOT NULL,
+    customer_id INT NOT NULL,
+    date DATE NOT NULL,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES Customers(id)
+);
+
+CREATE TABLE Users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('admin','user') NOT NULL,
+    fullname VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Sales (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    invoice_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (invoice_id) REFERENCES Invoices(id),
+    FOREIGN KEY (product_id) REFERENCES Products(id)
+);
