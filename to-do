@@ -1,0 +1,25 @@
+Veritabanı oluşturun ve tabloları tanımlayın (Müşteriler, Fatura, Stok vb.): 
+    Bu adımda, uygulamanız için gerekli olan veritabanını oluşturmalı ve tabloları tanımlamalısınız. 
+    Veritabanınızda saklamak istediğiniz verileri düşünerek tabloları oluşturmalısınız. 
+    Örneğin, müşteri bilgilerini saklamak için bir müşteri tablosu, 
+        fatura bilgilerini saklamak için bir fatura tablosu gibi.
+
+Gerekli formları oluşturun (Müşteri ekleme, fatura oluşturma, stok güncelleme vb.): 
+    Bu adımda, kullanıcıların veritabanına veri ekleyebilecekleri, 
+        güncelleyebilecekleri ve silebilecekleri formlar oluşturmalısınız. 
+    Örneğin, müşteri eklemek için bir müşteri ekleme formu, 
+        fatura oluşturmak için bir fatura oluşturma formu gibi.
+
+Giriş ve çıkış işlemlerini yapabilecek bir yetkilendirme sistemi oluşturun: 
+    Bu adımda, uygulamanızda giriş yapabilecek ve 
+        çıkış yapabilecek kullanıcıların yetkilendirmesini sağlamalısınız. 
+    Bu yetkilendirmenin nasıl yapılacağına karar vermeli ve gerekli kodları yazmalısınız.
+
+Raporlar üretebilecek fonksiyonlar yazın (Fatura raporu, satış raporu vb.): 
+    Bu adımda, kullanıcıların veritabanındaki verileri rapor olarak görüntüleyebilecekleri fonksiyonlar yazmalısınız. 
+    Örneğin, fatura raporu, satış raporu gibi.
+
+Test etme ve hata düzeltme: 
+    Bu adımda, yazdığınız kodları test etmeli ve hata düzeltmelisiniz. 
+    Test etmeniz gereken şeyler arasında formların doğru şekilde çalışıp çalışmadığı, 
+        veritabanına verilerin doğru şekilde eklendiği, raporların doğru şekilde ürettiği
